@@ -5,6 +5,7 @@ import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Map;
 import java.util.Map.Entry;
+import java.util.Set;
 
 public class ArrayStarter {
 	
@@ -47,6 +48,36 @@ public class ArrayStarter {
 		}
 		
 		hashSet.forEach(x-> System.out.println(x));
+		
+		Map<Integer, Integer> m1 = new HashMap();
+		
+		m1.put(1, 2);
+		m1.put(3, 4);
+		
+		for(Map.Entry<Integer, Integer> entry: m1.entrySet()) {
+			
+			entry.getKey();
+		}
+		
+		Iterator<Entry<Integer, Integer>> it2 = m1.entrySet().iterator();
+		while(it2.hasNext()) {
+			
+			Map.Entry<Integer, Integer> m3 = (Map.Entry<Integer, Integer>)it2.next();
+		}
+		
+		Set<Integer> set2 = new HashSet();
+		
+		for(int i: set2) {
+			System.out.println(i);
+		}
+		
+		Iterator<Integer> it4 = set2.iterator();
+		
+		while(it4.hasNext()){
+			 it4.next();
+		}
+		
+		
 		
 	}
 }
